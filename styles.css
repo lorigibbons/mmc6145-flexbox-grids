@@ -7,3 +7,35 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+
+.grid-container {
+  display: grid;
+  /*sets cols and rows to specified values*/
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100px 300px 300px 100px;
+  /*defining grid-areas in classes to the template*/
+  grid-template-areas: "header-grid header-grid" "sidebar body-content" "cat-grid cat-grid" "footer-grid footer-grid";
+}
+.header {
+  background: grey;
+  padding: 10px;
+  grid-area: header-grid;
+}
+.aside {
+  grid-area: sidebar;
+  background: purple;
+  padding: 10px;
+}
+.content {
+  grid-area: body-content;
+  padding: 10px;
+}
+.cats-cards-div {
+  grid-area: cat-grid;
+  background-color: orange;
+}
+.footer {
+  grid-area: footer-grid;
+  background-color: aqua;
+  padding: 10px;
+}
