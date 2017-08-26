@@ -8,10 +8,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+html {
+    font-family: Arial;
+}
+
+/*CSS GRID CONTENT*/
 .grid-container {
   display: grid;
   /*sets cols and rows to specified values*/
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px 4fr;
   grid-template-rows: 100px 300px 300px 100px;
   /*defining grid-areas in classes to the template*/
   grid-template-areas: "header-grid header-grid" "sidebar body-content" "cat-grid cat-grid" "footer-grid footer-grid";
@@ -38,4 +43,38 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   grid-area: footer-grid;
   background-color: aqua;
   padding: 10px;
+}
+
+/*FLEXBOX CONTENT*/
+.card-wrapper {
+  display: flex;
+}
+.one-card {
+  background: red;
+  border: 2px solid #ccc;
+  padding: 20px;
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.one-card:last-child {
+  margin-right: 0;
+}
+.card-image img {
+  width: 100%;
+}
+.card-button-div {
+  width: 100%;
+  align-self: flex-end;
+  margin-top: auto;
+}
+.card-button-div button {
+  background: black;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
