@@ -30,6 +30,11 @@ h1 {
 h2 {
     font-size: 24px;
 }
+
+h3 {
+    font-size: 20px;
+}
+
 .content p {
     font-size: 16px;
     line-height: 30px;
@@ -55,7 +60,7 @@ h2 {
 }
 .aside {
   grid-area: sidebar;
-  background: purple;
+  background: #e4e4e4;
   padding: 40px;
 }
 .content {
@@ -92,7 +97,7 @@ h2 {
   margin-right: 0;
 }
 .crop {
-    height: 119.2px;
+    height: 184.83px;
     overflow: hidden;
 }
 .card-image img {
