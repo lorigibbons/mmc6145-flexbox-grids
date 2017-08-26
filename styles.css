@@ -14,7 +14,6 @@ html {
 
 nav ul {
     list-style-type: none;
-
 }
 
 nav ul li a {
@@ -45,7 +44,7 @@ h2 {
   display: grid;
   /*sets cols and rows to specified values*/
   grid-template-columns: 300px 4fr;
-  grid-template-rows: 100px 250px 300px 100px;
+  grid-template-rows: 100px 250px 450px 100px;
   /*defining grid-areas in classes to the template*/
   grid-template-areas: "header-grid header-grid" "sidebar body-content" "cat-grid cat-grid" "footer-grid footer-grid";
 }
@@ -57,11 +56,11 @@ h2 {
 .aside {
   grid-area: sidebar;
   background: purple;
-  padding: 20px;
+  padding: 40px;
 }
 .content {
   grid-area: body-content;
-  padding: 20px;
+  padding: 40px;
 }
 .cats-cards-div {
   grid-area: cat-grid;
