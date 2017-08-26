@@ -23,37 +23,50 @@ nav ul li a {
     line-height: 30px;
 }
 
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+.content p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
 /*CSS GRID CONTENT*/
 .grid-container {
   display: grid;
   /*sets cols and rows to specified values*/
   grid-template-columns: 300px 4fr;
-  grid-template-rows: 100px 300px 300px 100px;
+  grid-template-rows: 100px 250px 300px 100px;
   /*defining grid-areas in classes to the template*/
   grid-template-areas: "header-grid header-grid" "sidebar body-content" "cat-grid cat-grid" "footer-grid footer-grid";
 }
 .header {
   background: grey;
-  padding: 10px;
+  padding: 20px;
   grid-area: header-grid;
 }
 .aside {
   grid-area: sidebar;
   background: purple;
-  padding: 10px;
+  padding: 20px;
 }
 .content {
   grid-area: body-content;
-  padding: 10px;
+  padding: 20px;
 }
 .cats-cards-div {
   grid-area: cat-grid;
   background-color: orange;
+  padding: 40px;
 }
 .footer {
   grid-area: footer-grid;
   background-color: aqua;
-  padding: 10px;
+  padding: 20px;
 }
 
 /*FLEXBOX CONTENT*/
@@ -61,9 +74,10 @@ nav ul li a {
   display: flex;
 }
 .one-card {
-  background: red;
+  background: transparent;
   border: 2px solid #ccc;
   padding: 20px;
+  font-family: Arial;
   flex: 1;
   margin-right: 20px;
   display: flex;
@@ -73,7 +87,7 @@ nav ul li a {
   margin-right: 0;
 }
 .card-image img {
-  width: 100%;
+  max-width: 100%;
 }
 .card-button-div {
   width: 100%;
@@ -85,6 +99,7 @@ nav ul li a {
   border: none;
   width: 100%;
   padding: 10px;
+  font-family: Arial;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
