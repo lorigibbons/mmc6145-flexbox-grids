@@ -96,10 +96,11 @@ h3 {
 .one-card:last-child {
   margin-right: 0;
 }
+/*
 .crop {
     height: 184.83px;
     overflow: hidden;
-}
+}*/
 .card-image img {
   max-width: 100%;
 }
